@@ -1,6 +1,6 @@
 """
-Imports os, Flask and SQLAlchemy
-Imports env to use hidden environment variables
+imports os, Flask and SQLAlchemy
+imports env to use hidden environment variables
 but only import 'env' if the os can find existing file path
 for the env.py file to avoid Heroku deployment error
 """
