@@ -11,10 +11,15 @@ if os.path.exists("env.py"):
     import env # noqa
 
 
+# creates an instance of the imported Flask() class
+# specifies app config variables
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_URL")
 
+# creates an instance of the SQLAlchemy() class
+# to be assigned to a variable 'db' and
+# set to the instance of Flask 'app'
 db = SQLAlchemy(app)
 
 from taskmanager import routes # noqa
