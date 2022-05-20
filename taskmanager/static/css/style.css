@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Prata&display=swap');
+
+:root {
+    --ff: 'Prata', Serif;
+    --ff-secondary: 'Lato', Sans-Serif;
+
+    --fw-m: 600;
+    --fw-b: 800;
+
+    --fs-2: 5rem;
+    --fs-p: 1rem;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: var(--ff);
+  }
+
+main {
+    flex: 1 0 auto;
+}
+
+p {
+    font-family: var(--ff-secondary);
+}
+
+.left-margin {
+    margin-left: 1rem;
+}
+

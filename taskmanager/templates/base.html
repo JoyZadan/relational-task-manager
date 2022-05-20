@@ -4,11 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/android-chrome-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-32x32.png') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     <title>Relational Task Manager</title>
 </head>
 <body>
 
-    Hello World!
+    <header>
+        <!-- top navbar -->
+        <nav class="pink darken-1">
+            <div class="nav-wrapper">
+                <a href="{{ url_for('home') }}" class="brand-logo left-margin">Task Manager</a>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+                    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="">New Task</a></li>
+                    <li><a href="">Categories</a></li>
+                </ul>
+            </div>
+        </nav>
 
+        <!-- mobile sidebar -->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="">New Task</a></li>
+            <li><a href="">Categories</a></li>
+        </ul>
+    </header>
+
+    <main class="container">
+        {% block content %}
+
+
+
+        {% endblock %}
+    </main>
+
+    <footer class="page-footer black">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2022 Relational Database Task Manager Application
+                <a
+                    class="grey-text text-lighten-4 right" href="https://codeinstitute.net"
+                    target="_blank">&copy; Code Institute
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
