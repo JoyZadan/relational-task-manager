@@ -1,32 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap');
 
 :root {
-    --ff: 'Prata', Serif;
-    --ff-secondary: 'Lato', Sans-Serif;
+    --ff: 'Syne', Sans-serif;
 
+    --fw-n: 400;
     --fw-m: 600;
     --fw-b: 800;
 
     --fs-2: 5rem;
     --fs-p: 1rem;
+
+    --custom-color: #ff009b;
+    --custom-color-hover: #af0069;
+
+    --bg-dark: #121212;
 }
 
 body {
     display: flex;
+    background-color: var(--bg-dark);
     min-height: 100vh;
     flex-direction: column;
     font-family: var(--ff);
-  }
+}
 
 main {
     flex: 1 0 auto;
 }
 
+.custom-color {
+    background-color: var(--custom-color);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: var(--fw-b);
+    color: var(--custom-color);
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
 p {
-    font-family: var(--ff-secondary);
+    font-family: var(--fw-n);
 }
 
 .left-margin {
     margin-left: 1rem;
 }
 
+/* media queries */
+
+/* @media screen and (min-width: 26.875em) {
+    #logo {
+        font-size: 1.5rem;
+    }
+} */

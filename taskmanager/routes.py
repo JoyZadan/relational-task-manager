@@ -17,3 +17,11 @@ def home():
     of 'base.html'
     """
     return render_template("tasks.html")
+
+
+@app.route("/categories")
+def categories():
+    """
+    generate categories template
+    """
+    return render_template("categories.html")
