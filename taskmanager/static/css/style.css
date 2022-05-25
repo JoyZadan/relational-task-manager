@@ -80,12 +80,12 @@ nav {
     background: rgba(0, 0, 0, 0.2);
 }
 
-/* nav.active {
+nav.active {
     position: fixed;
     padding: 0 20px;
     z-index: 100;
     background: #6a1b9a;
-} */
+}
 
 nav li a:hover {
     background-color: purple;
