@@ -149,13 +149,25 @@ main {
     padding-top: 0 !important;
 }
 
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto !important;
+    padding-top: .75rem;
+}
+
+.footer-copyright {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.footer-margin {
+    margin-top: 0 !important;
+}
 
 
-
-
-
-
-/* media queries */
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 26.875em) {
     #logo {
