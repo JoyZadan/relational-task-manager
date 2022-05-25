@@ -18,23 +18,23 @@
 
     <header>
         <!-- top navbar -->
-        <nav class="">
+        <nav class="nav">
             <div class="nav-wrapper">
                 <a href="{{ url_for('home') }}" class="brand-logo text-shadow" id="logo">Task Manager</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('home') }}">Home</a></li>
                     <li><a href="">New Task</a></li>
-                    <li><a href="">Categories</a></li>
+                    <li><a href="{{ url_for('categories') }}">Categories</a></li>
                 </ul>
             </div>
         </nav>
 
         <!-- mobile sidebar -->
-        <ul class="sidenav sidenav-bg purple" id="mobile-demo">
+        <ul class="sidenav purple accent-1" id="mobile-demo">
             <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="{{ url_for('categories') }}">New Task</a></li>
-            <li><a href="">Categories</a></li>
+            <li><a href="">New Task</a></li>
+            <li><a href="{{ url_for('categories') }}">Categories</a></li>
         </ul>
     </header>
 
@@ -46,7 +46,7 @@
         {% endblock %}
     </main>
 
-    <footer class="page-footer black">
+    <footer class="page-footer footer-custom purple darken-4">
         <div class="footer-copyright">
             <div class="container adj-margin">
                 © 2022 Relational Database Task Manager Application

@@ -9,7 +9,7 @@
     --fw-m: 600;
     --fw-b: 800;
 
-    --fs-2: 5rem;
+    --fs-2: 3rem;
     --fs-p: 1rem;
 
     --fc-h: #181818;
@@ -43,13 +43,6 @@ main {
     padding: 0;
 }
 
-/* h3,
-h4,
-h5,
-h6 {
-    font-family: var(--ff-secondary);
-} */
-
 /* FONTS STYLING */
 
 .text-shadow {
@@ -71,9 +64,9 @@ p {
     font-family: var(--fw-n);
 }
 
-.tasks-lead {
+.page-lead {
     color: var(--fc-h);
-    font-weight: var(--fw-b);
+    font-weight: var(--fw-m);
     font-size: var(--fs-2);
     text-shadow: var(--text-shadow);
 }
@@ -82,30 +75,31 @@ p {
 
 nav {
     position: fixed;
-    background: rgba(0, 0, 0, 0.2);
     padding: 0 20px;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.2);
 }
+
+/* nav.active {
+    position: fixed;
+    padding: 0 20px;
+    z-index: 100;
+    background: #6a1b9a;
+} */
 
 nav li a:hover {
     background-color: purple;
 }
 
-.sidenav-bg {
-    background-color: var(--custom-color);
-}
-
-
 main {
     flex: 1rem 0 auto;
 }
-
 
 /* ADJUSTED MARGINS TO CUSTOMISE MATERIALIZE STYLING */
 
 .adj-margin {
     margin: 2rem auto;
 }
-
 
 /* STYLING FOR THE TASKS PAGE */
 
@@ -129,12 +123,26 @@ main {
     margin-top: 6rem;
 }
 
+/* CARD PANEL STYLING TO CUSTOMISE MATERIALIZE STYLING */
 
+.card-panel-custom {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    overflow-x: hidden;
+    border-radius: 5px;
+}
 
+/* BUTTON STYLING TO CUSTOMISE MATERIALIZE STYLING */
 
+.button-custom {
+    border-radius: 5px;
+}
 
+/* FOOTER STYLING TO CUSTOMISE MATERIALIZE STYLING */
 
-
+.footer-custom {
+    padding-top: 0 !important;
+}
 
 
 
@@ -147,7 +155,19 @@ main {
 @media screen and (max-width: 26.875em) {
     #logo {
         font-size: 1.25rem;
+    }
 
+    .page-lead {
+        font-size: 2rem;
+    }
+
+    /* .button-custom a {
+        font-size: 1rem;
+    } */
+
+    .card-panel-custom {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 

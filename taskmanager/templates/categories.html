@@ -1,15 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="custom-color center-align">Categories</h3>
+    <section class="adj-margin-top">
+        <h3 class="center-align page-lead">Categories</h3>
 
-<!-- submit button -->
-<div class="row">
-    <div class="col s12 center-align">
-        <a href="{{ url_for('categories') }}" class="btn-large pink accent-2">
-            Add Category <i class="fas fa-plus-square right"></i>
-        </a>
-    </div>
-</div>
+        <!-- submit button -->
+        <div class="row">
+            <div class="col s12 center-align">
+                <a href="{{ url_for('add_category') }}" class="btn-large button-custom purple darken-3">
+                    Add Category <i class="fas fa-plus-square right"></i>
+                </a>
+            </div>
+        </div>
+
+    </section>
 
 {% endblock %}
