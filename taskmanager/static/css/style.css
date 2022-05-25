@@ -17,8 +17,8 @@
     --text-shadow: 2px 8px 6px rgba(0,0,0,0.6),
                     0px -5px 35px rgba(255,255,255,0.3);
 
-    --custom-color: #af0069;
-    --custom-color-hover:  #ff009b;
+    --custom-color: #4a148c;
+    --custom-color-secondary:  #ff009b;
 
     --alt-custom-color: #982bb8;
 
@@ -64,8 +64,13 @@ p {
     font-family: var(--fw-n);
 }
 
+.brand-logo {
+    color: var(--custom-color-secondary)!important;
+    font-weight: var(--fw-b);
+}
+
 .page-lead {
-    color: var(--fc-h);
+    color: var(--custom-color);
     font-weight: var(--fw-m);
     font-size: var(--fs-2);
     text-shadow: var(--text-shadow);
@@ -88,7 +93,7 @@ nav.active {
 }
 
 nav li a:hover {
-    background-color: purple;
+    background-color: var(--custom-color-secondary);
 }
 
 main {
