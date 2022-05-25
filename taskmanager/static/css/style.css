@@ -19,6 +19,7 @@
 
     --custom-color: #4a148c;
     --custom-color-secondary:  #ff009b;
+    --custom-color-tertiary: #e040fb;
 
     --alt-custom-color: #982bb8;
 
@@ -31,7 +32,9 @@ body {
     flex-direction: column;
 
     width: 100vw;
-    height: auto;
+    /* height: auto; */
+    min-height: 100vh;
+    flex-direction: column;
 
     font-family: var(--ff);
 
@@ -41,6 +44,7 @@ body {
 main {
     margin: 0;
     padding: 0;
+    flex: 1 0 auto;
 }
 
 /* FONTS STYLING */
@@ -96,10 +100,6 @@ nav li a:hover {
     background-color: var(--custom-color-secondary);
 }
 
-main {
-    flex: 1rem 0 auto;
-}
-
 /* ADJUSTED MARGINS TO CUSTOMISE MATERIALIZE STYLING */
 
 .adj-margin {
@@ -110,14 +110,13 @@ main {
 
 .section-container {
     width: 100%;
-    height: 800px;
     margin-right: 0 !important;
     margin-left: 0 !important;
     max-width: 100% !important;
 }
 
 .container-bg {
-    background: url(../images/orchidarium.jpg) no-repeat center center fixed;
+    background: url(../images/orchidarium.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -130,17 +129,50 @@ main {
 
 /* CARD PANEL STYLING TO CUSTOMISE MATERIALIZE STYLING */
 
-.card-panel-custom {
+.create-card-panel {
     margin-left: 5rem;
     margin-right: 5rem;
     overflow-x: hidden;
     border-radius: 5px;
 }
 
+.read-card {
+    border-radius: 5px;
+    background-color: rgba(128, 0, 128, 0.8)
+}
+
 /* BUTTON STYLING TO CUSTOMISE MATERIALIZE STYLING */
 
 .button-custom {
     border-radius: 5px;
+}
+
+.read-button {
+    border-radius: 5px;
+    border: 1px solid inherit;
+    margin: 0.5rem auto;
+}
+
+.read-edit-btn {
+    border-radius: 5px;
+    /* border: 1px solid var(--custom-color-secondary); */
+    background: var(--custom-color-secondary);
+    margin: 0.5rem auto;
+}
+
+.read-button:hover {
+    background-color: #ffb300 !important;
+    color: var(--custom-color);
+}
+
+.read-edit-btn:hover {
+    background-color: #ffb300;
+    color: var(--custom-color);
+}
+
+.read-button-container {
+    display: flex;
+    justify-content: center;
 }
 
 /* FOOTER STYLING TO CUSTOMISE MATERIALIZE STYLING */
@@ -182,7 +214,7 @@ main {
         font-size: 1rem;
     } */
 
-    .card-panel-custom {
+    .create-card-panel {
         margin-left: 1rem;
         margin-right: 1rem;
     }
