@@ -125,6 +125,11 @@ nav li a:hover {
 
 /* CARD PANEL STYLING TO CUSTOMISE MATERIALIZE STYLING */
 
+.cards-container {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+}
+
 .create-card-panel {
     margin-left: 5rem;
     margin-right: 5rem;
@@ -134,7 +139,6 @@ nav li a:hover {
 
 .read-card {
     border-radius: 5px;
-    background-color: rgba(128, 0, 128, 0.8)
 }
 
 .categories-cards {
