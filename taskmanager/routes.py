@@ -24,6 +24,7 @@ def home():
 def categories():
     """
     query the database to use within our template
+    retrieve or query, sort and loop through categories
     generate categories template
     """
     categories = Category.query.order_by(Category.category_name).all()
@@ -42,3 +43,17 @@ def add_category():
         db.session.commit()
         return redirect(url_for("categories"))
     return render_template("add_category.html")
+
+
+@app.route("/edit_category/<int:category_id>", methods=["GET", "POST"])
+def edit_category(category_id):
+    """
+    get the template and render it
+    """
+    category = Category.query.get_or_404(category_id)
+    if request.method == "POST":
+        category.category_name = request.form.get("category_name")
+        db.session.commit()
+        return redirect(url_for("categories"))
+    return render_template("edit_category.html", category=category)
+

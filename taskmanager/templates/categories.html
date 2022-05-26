@@ -17,13 +17,15 @@
         <div class="row">
             {% for category in categories %}
             <div class="col s12 m6 l3">
-                <div class="card read-card">
+                <div class="card read-card hoverable">
                     <div class="card-content white-text">
                         <!-- category.id to show below the primary key instead -->
                         <span class="card-title">{{ category.category_name}}</span>
                     </div>
                     <div class="card-action read-button-container purple darken-3">
-                        <a href="#" class="btn-small waves-effect read-edit-btn">Edit</a>
+                        <a href="{{ url_for('edit_category', category_id=category.id) }}"
+                            class="btn-small waves-effect read-edit-btn">Edit
+                        </a>
                         <a href="#" class="btn-small waves-effect purple darken-1 read-button">Delete</a>
                     </div>
                 </div>

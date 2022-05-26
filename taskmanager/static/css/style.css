@@ -48,7 +48,6 @@ main {
 }
 
 /* FONTS STYLING */
-
 .text-shadow {
     text-shadow: var(--text-shadow);
 }
@@ -81,7 +80,6 @@ p {
 }
 
 /* NAVBAR STYLING */
-
 nav {
     position: fixed;
     padding: 0 20px;
@@ -101,13 +99,11 @@ nav li a:hover {
 }
 
 /* ADJUSTED MARGINS TO CUSTOMISE MATERIALIZE STYLING */
-
 .adj-margin {
     margin: 2rem auto;
 }
 
 /* STYLING FOR THE TASKS PAGE */
-
 .section-container {
     width: 100%;
     margin-right: 0 !important;
@@ -141,6 +137,12 @@ nav li a:hover {
     background-color: rgba(128, 0, 128, 0.8)
 }
 
+.categories-cards {
+    display: flex;
+    margin: 2rem auto;
+    padding-right: 1.5rem !important;
+}
+
 /* BUTTON STYLING TO CUSTOMISE MATERIALIZE STYLING */
 
 .button-custom {
@@ -155,7 +157,6 @@ nav li a:hover {
 
 .read-edit-btn {
     border-radius: 5px;
-    /* border: 1px solid var(--custom-color-secondary); */
     background: var(--custom-color-secondary);
     margin: 0.5rem auto;
 }
@@ -176,7 +177,6 @@ nav li a:hover {
 }
 
 /* FOOTER STYLING TO CUSTOMISE MATERIALIZE STYLING */
-
 .footer-custom {
     padding-top: 0 !important;
 }
@@ -198,9 +198,7 @@ nav li a:hover {
     margin-top: 0 !important;
 }
 
-
 /* MEDIA QUERIES */
-
 @media screen and (max-width: 26.875em) {
     #logo {
         font-size: 1.25rem;
@@ -210,19 +208,8 @@ nav li a:hover {
         font-size: 2rem;
     }
 
-    /* .button-custom a {
-        font-size: 1rem;
-    } */
-
     .create-card-panel {
         margin-left: 1rem;
         margin-right: 1rem;
-    }
-}
-
-@media screen and (min-width: 64rem) {
-    main,
-    container {
-        margin: 0;
     }
 }
