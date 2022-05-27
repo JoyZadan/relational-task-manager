@@ -19,7 +19,3 @@ window.onscroll = function() {
     nav.classList.remove('active');
   }
 }
-
-
-var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, options);
