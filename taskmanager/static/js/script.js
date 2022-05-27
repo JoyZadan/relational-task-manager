@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Sidenav.init(sidenav);
     let slider = document.querySelectorAll('.slider');
     var instances = M.Slider.init('.slider');
+    let modal = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(modal);
   });
 
 const nav = document.querySelector('.nav');
@@ -17,3 +19,7 @@ window.onscroll = function() {
     nav.classList.remove('active');
   }
 }
+
+
+var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
