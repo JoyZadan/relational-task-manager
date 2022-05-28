@@ -1,19 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
     // sidebar initialization
     let sidenav = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(sidenav);
+    M.Sidenav.init(sidenav);
     // modal initialization
     let modal = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(modal);
+    M.Modal.init(modal);
     // datepicker initialization
     var datepicker = document.querySelectorAll('.datepicker');
-    var instances = M.Datepicker.init(datepicker, {
+    M.Datepicker.init(datepicker, {
       format: "dd mmmm, yyyy",
       i18n: {done: "Select"}
     });
     // select initialization
     let selects = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(selects);
+    M.FormSelect.init(selects);
   });
 
 
