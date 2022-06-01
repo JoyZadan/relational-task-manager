@@ -17,7 +17,8 @@ def home():
     the function 'home' will return the rendered-template
     of 'base.html'
     """
-    return render_template("tasks.html")
+    tasks = list(Task.query.order_by(Task.id).all())
+    return render_template("tasks.html", tasks=tasks)
 
 
 @app.route("/categories")

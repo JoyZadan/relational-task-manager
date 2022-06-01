@@ -180,6 +180,14 @@ nav li a:hover {
     justify-content: center;
 }
 
+/* TASKS COLLAPSIBLES CUSTOMISE MATERIALIZE STYLING */
+.collapsible {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    max-width: 80vw;
+}
+
 /* FOOTER STYLING TO CUSTOMISE MATERIALIZE STYLING */
 .footer-custom {
     padding-top: 0 !important;
