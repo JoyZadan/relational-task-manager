@@ -36,7 +36,7 @@
                         <div id="modal-{{ category.id }}" class="modal">
                             <div class="modal-content">
                                 <h4>Are you sure you want to delete this category?</h4>
-                                <p class="red-text darken-4">WARNING: this will delete all related tasks!</p>
+                                <p class="red-text">WARNING: this will delete all related tasks!</p>
                             </div>
                             <div class="modal-footer">
                                 <a href="{{ url_for('delete_category', category_id=category.id) }}" class="btn red">Delete</a>
