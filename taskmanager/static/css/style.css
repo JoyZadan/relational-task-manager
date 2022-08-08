@@ -199,6 +199,8 @@ nav li a:hover {
     align-items: center;
     margin: 0 auto !important;
     padding-top: .75rem;
+    width: 300px;
+    height: 160px;
 }
 
 .footer-copyright {
