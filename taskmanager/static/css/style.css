@@ -85,6 +85,7 @@ nav {
     padding: 0 20px;
     z-index: 100;
     background: rgba(0, 0, 0, 0.2);
+    height: 6.25rem;
 }
 
 nav.active {
@@ -195,7 +196,7 @@ nav li a:hover {
 
 .nav-logo {
     margin: 0 auto !important;
-    padding-top: .75rem;
+    /* padding-top: .75rem; */
     width: 10rem;
     /* height: 22.8px; */
     /* margin-top: -20px;
