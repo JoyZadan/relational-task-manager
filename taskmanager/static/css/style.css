@@ -193,6 +193,15 @@ nav li a:hover {
     padding-top: 0 !important;
 }
 
+.nav-logo {
+    margin: 0 auto !important;
+    padding-top: .75rem;
+    width: 43px;
+    height: 22.8px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
 .footer-logo {
     display: flex;
     justify-content: center;
