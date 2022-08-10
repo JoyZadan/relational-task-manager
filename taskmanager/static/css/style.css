@@ -32,7 +32,6 @@ body {
     flex-direction: column;
 
     width: 100vw;
-    /* height: auto; */
     min-height: 100vh;
     flex-direction: column;
 
@@ -121,11 +120,10 @@ nav li a:hover {
 }
 
 .adj-margin-top {
-    margin-top: 10.625rem;
+    margin-top: 6rem;
 }
 
 /* CARD PANEL STYLING TO CUSTOMISE MATERIALIZE STYLING */
-
 .cards-container {
     margin-left: 1rem !important;
     margin-right: 1rem !important;
@@ -149,7 +147,6 @@ nav li a:hover {
 }
 
 /* BUTTON STYLING TO CUSTOMISE MATERIALIZE STYLING */
-
 .button-custom {
     border-radius: 5px;
 }
@@ -196,11 +193,8 @@ nav li a:hover {
 
 .nav-logo {
     margin: 0 auto !important;
-    /* padding-top: .75rem; */
+    padding-top: .75rem;
     width: 10rem;
-    /* height: 22.8px; */
-    /* margin-top: -20px;
-    margin-bottom: -20px; */
 }
 
 .footer-logo {
@@ -209,7 +203,7 @@ nav li a:hover {
     align-items: center;
     margin: 0 auto !important;
     padding-top: .75rem;
-    /* width: 50px; */
+    width: 50px;
     height: 10rem;
 }
 
